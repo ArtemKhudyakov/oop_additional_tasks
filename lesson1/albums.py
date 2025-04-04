@@ -21,15 +21,23 @@
 """
 
 
-class ...:
+class Album:
+    artist:str
+    title:str
+    tracks:list[str]
+    def __init__(self, artist:str, title:str, tracks:list[str]) -> None:
+        self.artist = artist
+        self.title = title
+        self.tracks = tracks
 
-    def ...:
-    ...
+
+    # def ...:
+    # ...
 
 
-album_1 = Album(...)
+album_1 = Album("Queen", "Killer Queen", ['Brighton rock', 'Killer Queen', 'Tenement Funster'])
 
-album_2 = ...
+album_2 = Album("Metallica", "Black Album", ['Enter Sandman', 'Sad But True', 'Holier Than Thou'])
 
 
 # код для проверки 

@@ -13,18 +13,20 @@
 """
 
 class Number:
+    value:int
 
     def __init__(self, value):
-        ...
+        self.value = value
 
-    def ...(self):
-        ...
+    def get(self):
+        return self.value
 
-    def ...:
-        ...
+    def add(self, addition):
+        added = self.value+addition
+        return added
 
-    def ...:
-        ...
+    def substruct(self, subtraction):
+        self.value -= subtraction
 
 
 # код для проверки 
@@ -32,5 +34,5 @@ n = Number(7)
 print(n.get())  # 7
 n.add(3)
 print(n.get())  # 10
-n.substract(5)
+n.substruct(5)
 print(n.get())  # 5
