@@ -8,7 +8,16 @@
 
 
 class Counter:
-    pass
+    def __init__(self):
+        self.start = 0
+
+
+
+    def __call__ (self):
+        return self.start
+
+    def increment(self):
+        self.start += 1
 
 
 # код для проверки 
