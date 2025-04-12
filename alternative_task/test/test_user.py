@@ -16,8 +16,8 @@ def test_user_init(first_user, second_user):
 
 
 def test_user_task_list_property(first_user):
-    assert first_user.task_list ==('Купить огурцы, статус выполнения Ожидает старта, дата создания:  06.04.2025\n'
-                                   'Купить помидоры, статус выполнения Ожидает старта, дата создания:  06.04.2025\n')
+    assert first_user.task_list ==('Купить огурцы, статус выполнения: Ожидает старта, дата создания: 06.04.2025, время на выполнеие задачи: 0\n'
+                                   'Купить помидоры, статус выполнения: Ожидает старта, дата создания: 06.04.2025, время на выполнеие задачи: 0\n')
 
 def test_user_task_list_setter(first_user, task):
     assert len(first_user.task_in_list) == 2
